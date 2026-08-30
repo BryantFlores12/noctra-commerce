@@ -1,5 +1,7 @@
 # NOCTRA Commerce
 
+[![CI](https://github.com/BryantFlores12/noctra-commerce/actions/workflows/ci.yml/badge.svg)](https://github.com/BryantFlores12/noctra-commerce/actions/workflows/ci.yml)
+
 ![NOCTRA Commerce](public/og.png)
 
 Plantilla de comercio electrónico para moda con pagos reales, persistencia de pedidos, captación de leads y un estilista asistido por IA. Está pensada como una base lista para personalizar, probar y desplegar sin exponer secretos en el navegador.
