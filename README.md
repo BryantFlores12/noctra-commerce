@@ -6,8 +6,6 @@
 
 Plantilla de comercio electrónico para moda con pagos reales, persistencia de pedidos, captación de leads y un estilista asistido por IA. Está pensada como una base lista para personalizar, probar y desplegar sin exponer secretos en el navegador.
 
-> Código fuente visible para evaluación de portafolio. Su publicación no concede permiso para copiar, redistribuir o comercializar la plantilla; consulta la licencia incluida.
-
 ## Características
 
 - Catálogo responsive con selección de talla, bolsa y flujo de compra.
@@ -92,8 +90,10 @@ Para Gemini, abre **NØA · AI Stylist** y solicita un look con ocasión, presup
 5. Define impuestos, envíos, inventario, devoluciones y textos legales.
 6. Revisa accesibilidad, privacidad y consentimiento.
 
-Consulta `GUIA_DE_DISTRIBUCION.md` para preparar una entrega comercial.
+## Contexto
 
-## Seguridad y licencia
+Proyecto de portafolio creado para demostrar una experiencia de comercio electrónico completa, con pagos, persistencia, webhooks e inteligencia artificial conectados desde el servidor.
 
-No incluyas claves, datos de clientes ni archivos de entorno en el repositorio. El código se distribuye bajo la licencia comercial incluida en `LICENCIA_COMERCIAL_PLANTILLA.md`.
+## Seguridad
+
+No incluyas claves, datos de clientes ni archivos de entorno en el repositorio.
