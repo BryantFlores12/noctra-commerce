@@ -4,25 +4,25 @@
 
 ![NOCTRA Commerce](public/og.png)
 
-Plantilla de comercio electrónico para moda con pagos reales, persistencia de pedidos, captación de leads y un estilista asistido por IA. Está pensada como una base lista para personalizar, probar y desplegar sin exponer secretos en el navegador.
+NOCTRA Commerce es una tienda de moda en línea que desarrollé para conectar una interfaz visual con funciones reales. Incluye pagos con Stripe, almacenamiento de pedidos y suscriptores, además de un asistente de estilo con inteligencia artificial.
 
 ## Características
 
-- Catálogo responsive con selección de talla, bolsa y flujo de compra.
+- Catálogo adaptable con selección de talla, bolsa y proceso de compra.
 - Stripe Payment Element y Express Checkout para Apple Pay y Google Pay cuando están disponibles.
 - Importes calculados y verificados exclusivamente en el servidor.
 - Webhook firmado para sincronizar el estado de cada pago.
 - Pedidos, artículos y suscriptores almacenados en Cloudflare D1.
-- Asistente NØA conectado a Gemini mediante una ruta del servidor.
+- Asistente NØA conectado a Gemini desde el servidor.
 - Recomendaciones limitadas al catálogo para evitar productos inventados.
 - Diseño editorial, visualizador de prendas y recomendador de talla.
 
-## Stack
+## Tecnologías
 
 | Área | Tecnología |
 | --- | --- |
 | Interfaz | React 19, Next.js 16, TypeScript, Tailwind CSS 4 |
-| Runtime | Vinext, Vite, Cloudflare Workers |
+| Entorno | Vinext, Vite, Cloudflare Workers |
 | Pagos | Stripe Payment Element, Express Checkout y webhooks |
 | IA | Gemini API desde el servidor |
 | Datos | Cloudflare D1 y migraciones SQL |
@@ -69,7 +69,7 @@ La migración inicial está en `drizzle/0001_noctra_commerce.sql` e incluye:
 - `order_items`: productos, tallas y cantidades.
 - `leads`: correos y consentimiento del formulario principal.
 
-La aplicación espera un binding D1 llamado `DB` en el entorno de Cloudflare.
+La aplicación utiliza una conexión D1 llamada `DB` en el entorno de Cloudflare.
 
 ## Pruebas de integración
 
@@ -79,20 +79,20 @@ Para Stripe en modo de prueba, usa `4242 4242 4242 4242`, cualquier fecha futura
 http://localhost:3000/api/stripe/webhook
 ```
 
-Para Gemini, abre **NØA · AI Stylist** y solicita un look con ocasión, presupuesto y preferencias. La respuesta debe recomendar únicamente referencias existentes.
+Para probar Gemini, abre el asistente **NØA** y solicita un conjunto indicando la ocasión, el presupuesto y tus preferencias. La respuesta debe recomendar únicamente productos que existan en el catálogo.
 
 ## Antes de producción
 
 1. Configura claves activas y un webhook HTTPS.
 2. Aplica la migración D1 y verifica copias de seguridad.
-3. Registra el dominio para wallets en Stripe.
+3. Registra el dominio para las carteras digitales en Stripe.
 4. Sustituye catálogo, precios, imágenes, políticas y datos de marca.
 5. Define impuestos, envíos, inventario, devoluciones y textos legales.
 6. Revisa accesibilidad, privacidad y consentimiento.
 
-## Contexto
+## Sobre el proyecto
 
-Proyecto de portafolio creado para demostrar una experiencia de comercio electrónico completa, con pagos, persistencia, webhooks e inteligencia artificial conectados desde el servidor.
+Con este proyecto trabajé el proceso completo de una tienda en línea: mostrar el catálogo, cobrar, confirmar pagos con webhooks, guardar pedidos y conectar inteligencia artificial sin exponer las claves en el navegador.
 
 ## Seguridad
 
