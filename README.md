@@ -6,6 +6,8 @@
 
 Plantilla de comercio electrónico para moda con pagos reales, persistencia de pedidos, captación de leads y un estilista asistido por IA. Está pensada como una base lista para personalizar, probar y desplegar sin exponer secretos en el navegador.
 
+> Código fuente visible para evaluación de portafolio. Su publicación no concede permiso para copiar, redistribuir o comercializar la plantilla; consulta la licencia incluida.
+
 ## Características
 
 - Catálogo responsive con selección de talla, bolsa y flujo de compra.
